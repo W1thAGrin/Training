@@ -6,12 +6,6 @@ public class Main {
 
     static void initLibrary(){
 
-    }
-
-    public static void main(String[] args){
-
-        Library library = new Library();
-
         Book book1 = new Book("Kebab","Serega", 10, true);
         Book book2 = new Book("Burgir","Illya", 20,true);
         Book book3 = new Book("Nuggets","Sanya", 30,true);
@@ -23,6 +17,13 @@ public class Main {
         library.addBook(book3);
         library.addBook(book4);
         library.addBook(book5);
+
+    }
+
+    public static void main(String[] args){
+
+        initLibrary();
+
 
         borrowBook(library.getBooks().get(1));
 
